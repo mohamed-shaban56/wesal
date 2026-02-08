@@ -17,7 +17,12 @@ class CustomBottomNavgationBar extends StatelessWidget {
           },
           type: BottomNavigationBarType.fixed, // Ensure items don't shift
           unselectedItemColor: AppColor.bottomNavigationBarInActiveColr,
-          selectedItemColor: AppColor.primaryColor,
+          selectedItemColor: Colors.black,
+          selectedIconTheme: IconThemeData(color: AppColor.primaryColor),
+          unselectedIconTheme: IconThemeData(
+            color: AppColor.bottomNavigationBarInActiveColr,
+          ),
+          selectedLabelStyle: TextStyle(color: Colors.black),
           unselectedFontSize: 12,
           selectedFontSize: 12,
           showUnselectedLabels: true,
