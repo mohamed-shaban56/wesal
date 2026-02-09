@@ -45,6 +45,14 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle cairo17Bold(BuildContext context) {
+    return const TextStyle(
+      fontSize: 17,
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+    );
+  }
+
   static TextStyle cairo14BoldPrimary(BuildContext context) {
     return const TextStyle(
       fontSize: 14,
