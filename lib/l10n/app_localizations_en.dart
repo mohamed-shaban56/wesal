@@ -55,4 +55,49 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tryFree => 'Try free';
+
+  @override
+  String get editAccount => 'Edit Account';
+
+  @override
+  String get myAddresses => 'My Addresses';
+
+  @override
+  String get changePassword => 'Change Password';
+
+  @override
+  String get myOrders => 'My Orders';
+
+  @override
+  String get wallet => 'Wallet';
+
+  @override
+  String get darkMode => 'Dark Mode';
+
+  @override
+  String get notifications => 'Notifications';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get arabic => 'Arabic';
+
+  @override
+  String get helpAndFaq => 'Help & FAQ';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get termsOfUse => 'Terms of Use';
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get defaultUserName => 'Mohamed Shaban';
+
+  @override
+  String get defaultUserEmail => 'user@gmail.com';
 }

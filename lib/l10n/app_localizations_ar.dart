@@ -55,4 +55,49 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tryFree => 'جرب مجاناً';
+
+  @override
+  String get editAccount => 'تعديل الحساب';
+
+  @override
+  String get myAddresses => 'عناويني';
+
+  @override
+  String get changePassword => 'تغيير كلمة المرور';
+
+  @override
+  String get myOrders => 'طلباتي';
+
+  @override
+  String get wallet => 'المحفظة';
+
+  @override
+  String get darkMode => 'الوضع الليلي';
+
+  @override
+  String get notifications => 'الإشعارات';
+
+  @override
+  String get language => 'اللغة';
+
+  @override
+  String get arabic => 'العربية';
+
+  @override
+  String get helpAndFaq => 'المساعدة والأسئلة الشائعة';
+
+  @override
+  String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get termsOfUse => 'شروط الاستخدام';
+
+  @override
+  String get logout => 'تسجيل الخروج';
+
+  @override
+  String get defaultUserName => 'محمد شعبان';
+
+  @override
+  String get defaultUserEmail => 'user@gmail.com';
 }

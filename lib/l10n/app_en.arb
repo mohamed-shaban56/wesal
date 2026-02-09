@@ -14,5 +14,21 @@
   "unlockPro": "Unlock Pro\nwith Red",
   "familyPerks": "Perks for the whole family",
   "freeDeliveryDeals": "Free delivery & exclusive deals",
-  "tryFree": "Try free"
+  "tryFree": "Try free",
+  "editAccount": "Edit Account",
+  "myAddresses": "My Addresses",
+  "changePassword": "Change Password",
+  "myOrders": "My Orders",
+  "wallet": "Wallet",
+  "darkMode": "Dark Mode",
+  "notifications": "Notifications",
+  "language": "Language",
+  "arabic": "Arabic",
+  "helpAndFaq": "Help & FAQ",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfUse": "Terms of Use",
+  "logout": "Logout",
+  "defaultUserName": "Mohamed Shaban",
+  "defaultUserEmail": "user@gmail.com"
+
 }

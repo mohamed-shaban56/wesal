@@ -14,5 +14,20 @@
   "unlockPro": "افتح برو\nمع ريد",
   "familyPerks": "مزايا لكل العائلة",
   "freeDeliveryDeals": "توصيل مجاني وعروض حصرية",
-  "tryFree": "جرب مجاناً"
+  "tryFree": "جرب مجاناً",
+  "editAccount": "تعديل الحساب",
+  "myAddresses": "عناويني",
+  "changePassword": "تغيير كلمة المرور",
+  "myOrders": "طلباتي",
+  "wallet": "المحفظة",
+  "darkMode": "الوضع الليلي",
+  "notifications": "الإشعارات",
+  "language": "اللغة",
+  "arabic": "العربية",
+  "helpAndFaq": "المساعدة والأسئلة الشائعة",
+  "privacyPolicy": "سياسة الخصوصية",
+  "termsOfUse": "شروط الاستخدام",
+  "logout": "تسجيل الخروج",
+  "defaultUserName": "محمد شعبان",
+  "defaultUserEmail": "user@gmail.com"
 }
