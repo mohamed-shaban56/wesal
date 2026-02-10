@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wesal/features/account/presentation/views/account_view.dart';
 import 'package:wesal/features/home/presentation/views/home_view.dart';
 
 List<Widget> screen = [
@@ -9,9 +10,5 @@ List<Widget> screen = [
     width: double.infinity,
     color: Colors.green,
   ),
-  Container(
-    height: double.infinity,
-    width: double.infinity,
-    color: Colors.black,
-  ),
+  AccountView(),
 ];
