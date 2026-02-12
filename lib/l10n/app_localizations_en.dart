@@ -100,4 +100,119 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get defaultUserEmail => 'user@gmail.com';
+
+  @override
+  String get enabled => 'Enabled';
+
+  @override
+  String get disabled => 'Disabled';
+
+  @override
+  String get notificationsEnabled => 'Notifications Enabled';
+
+  @override
+  String get notificationsSettingsDescription =>
+      'To control notifications, please go to your phone settings.';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get paymentDetails => 'Payment Details';
+
+  @override
+  String get selectPaymentMethod => 'Select Payment Method';
+
+  @override
+  String get creditCard => 'Credit Card';
+
+  @override
+  String get mobileWallet => 'Mobile Wallet';
+
+  @override
+  String get fawry => 'Fawry';
+
+  @override
+  String get pay => 'Pay';
+
+  @override
+  String get totalAmount => 'Total Amount';
+
+  @override
+  String get currency => 'EGP';
+
+  @override
+  String get trackOrder => 'Track Order';
+
+  @override
+  String get orderReceived => 'Order Received';
+
+  @override
+  String get preparing => 'Preparing';
+
+  @override
+  String get outForDelivery => 'Out for Delivery';
+
+  @override
+  String get delivered => 'Delivered';
+
+  @override
+  String get estimatedTime => 'Estimated Delivery Time';
+
+  @override
+  String get mins => 'mins';
+
+  @override
+  String get searchTitle => 'Search';
+
+  @override
+  String get topSearches => 'Top Searches';
+
+  @override
+  String get popularCuisines => 'Popular Cuisines';
+
+  @override
+  String get trendingRestaurants => 'Trending Restaurants';
+
+  @override
+  String get searchHintRestaurants => 'Search for restaurants, items...';
+
+  @override
+  String get recentSearches => 'Recent Searches';
+
+  @override
+  String get homeTitle => 'Home';
+
+  @override
+  String get ordersTitle => 'Orders';
+
+  @override
+  String get cartTitle => 'Cart';
+
+  @override
+  String get accountTitle => 'Account';
+
+  @override
+  String get friedChicken => 'Fried Chicken';
+
+  @override
+  String get koshary => 'Koshary';
+
+  @override
+  String get shawerma => 'Shawerma';
+
+  @override
+  String get pasta => 'Pasta';
+
+  @override
+  String get bestBurgers => 'Best burgers in town';
+
+  @override
+  String get freshAndHot => 'Fresh and Hot';
+
+  @override
+  String get crispyChicken => 'Crispy Chicken';
 }

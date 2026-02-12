@@ -283,6 +283,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'user@gmail.com'**
   String get defaultUserEmail;
+
+  /// No description provided for @enabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Enabled'**
+  String get enabled;
+
+  /// No description provided for @disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Disabled'**
+  String get disabled;
+
+  /// No description provided for @notificationsEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications Enabled'**
+  String get notificationsEnabled;
+
+  /// No description provided for @notificationsSettingsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'To control notifications, please go to your phone settings.'**
+  String get notificationsSettingsDescription;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @paymentDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Details'**
+  String get paymentDetails;
+
+  /// No description provided for @selectPaymentMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Payment Method'**
+  String get selectPaymentMethod;
+
+  /// No description provided for @creditCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Credit Card'**
+  String get creditCard;
+
+  /// No description provided for @mobileWallet.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile Wallet'**
+  String get mobileWallet;
+
+  /// No description provided for @fawry.
+  ///
+  /// In en, this message translates to:
+  /// **'Fawry'**
+  String get fawry;
+
+  /// No description provided for @pay.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay'**
+  String get pay;
+
+  /// No description provided for @totalAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Amount'**
+  String get totalAmount;
+
+  /// No description provided for @currency.
+  ///
+  /// In en, this message translates to:
+  /// **'EGP'**
+  String get currency;
+
+  /// No description provided for @trackOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Track Order'**
+  String get trackOrder;
+
+  /// No description provided for @orderReceived.
+  ///
+  /// In en, this message translates to:
+  /// **'Order Received'**
+  String get orderReceived;
+
+  /// No description provided for @preparing.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing'**
+  String get preparing;
+
+  /// No description provided for @outForDelivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Out for Delivery'**
+  String get outForDelivery;
+
+  /// No description provided for @delivered.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivered'**
+  String get delivered;
+
+  /// No description provided for @estimatedTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Delivery Time'**
+  String get estimatedTime;
+
+  /// No description provided for @mins.
+  ///
+  /// In en, this message translates to:
+  /// **'mins'**
+  String get mins;
+
+  /// No description provided for @searchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get searchTitle;
+
+  /// No description provided for @topSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Top Searches'**
+  String get topSearches;
+
+  /// No description provided for @popularCuisines.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular Cuisines'**
+  String get popularCuisines;
+
+  /// No description provided for @trendingRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'Trending Restaurants'**
+  String get trendingRestaurants;
+
+  /// No description provided for @searchHintRestaurants.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for restaurants, items...'**
+  String get searchHintRestaurants;
+
+  /// No description provided for @recentSearches.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Searches'**
+  String get recentSearches;
+
+  /// No description provided for @homeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeTitle;
+
+  /// No description provided for @ordersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Orders'**
+  String get ordersTitle;
+
+  /// No description provided for @cartTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cart'**
+  String get cartTitle;
+
+  /// No description provided for @accountTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get accountTitle;
+
+  /// No description provided for @friedChicken.
+  ///
+  /// In en, this message translates to:
+  /// **'Fried Chicken'**
+  String get friedChicken;
+
+  /// No description provided for @koshary.
+  ///
+  /// In en, this message translates to:
+  /// **'Koshary'**
+  String get koshary;
+
+  /// No description provided for @shawerma.
+  ///
+  /// In en, this message translates to:
+  /// **'Shawerma'**
+  String get shawerma;
+
+  /// No description provided for @pasta.
+  ///
+  /// In en, this message translates to:
+  /// **'Pasta'**
+  String get pasta;
+
+  /// No description provided for @bestBurgers.
+  ///
+  /// In en, this message translates to:
+  /// **'Best burgers in town'**
+  String get bestBurgers;
+
+  /// No description provided for @freshAndHot.
+  ///
+  /// In en, this message translates to:
+  /// **'Fresh and Hot'**
+  String get freshAndHot;
+
+  /// No description provided for @crispyChicken.
+  ///
+  /// In en, this message translates to:
+  /// **'Crispy Chicken'**
+  String get crispyChicken;
 }
 
 class _AppLocalizationsDelegate
