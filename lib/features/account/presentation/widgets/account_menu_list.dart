@@ -1,14 +1,65 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:wesal/features/account/presentation/widgets/account_menu_item.dart';
 import 'package:wesal/features/account/presentation/widgets/account_menu_section.dart';
 import 'package:wesal/features/account/presentation/widgets/custom_switch_widgt.dart';
 import 'package:wesal/features/account/presentation/widgets/functions/build_language_model_sheet.dart';
+import 'package:wesal/features/account/presentation/widgets/functions/build_show_notification_dialog.dart';
 import 'package:wesal/features/account/presentation/widgets/logout_button.dart';
+import 'package:wesal/features/payment/presentation/views/payment_details_view.dart';
 import 'package:wesal/l10n/app_localizations.dart';
 
-class AccountMenuList extends StatelessWidget {
+import 'package:permission_handler/permission_handler.dart';
+
+class AccountMenuList extends StatefulWidget {
   const AccountMenuList({super.key});
+
+  @override
+  State<AccountMenuList> createState() => _AccountMenuListState();
+}
+
+class _AccountMenuListState extends State<AccountMenuList>
+    with WidgetsBindingObserver {
+  bool? isNotificationEnabled;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _checkNotificationPermission();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _checkNotificationPermission();
+    }
+  }
+
+  Future<void> _checkNotificationPermission() async {
+    try {
+      final status = await Permission.notification.status;
+      if (mounted) {
+        setState(() {
+          isNotificationEnabled = status.isGranted;
+        });
+      }
+    } catch (e) {
+      debugPrint("Error checking notification permission: $e");
+      if (mounted) {
+        setState(() {
+          isNotificationEnabled = false;
+        });
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +98,12 @@ class AccountMenuList extends StatelessWidget {
             AccountMenuItem(
               icon: Icons.account_balance_wallet_outlined,
               title: AppLocalizations.of(context)!.wallet,
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PaymentDetailsView()),
+                );
+              },
             ),
           ],
         ),
@@ -63,10 +119,13 @@ class AccountMenuList extends StatelessWidget {
               onTap: () {},
             ),
             AccountMenuItem(
+              isNotification: true,
+              notificationStatus: isNotificationEnabled,
               icon: Icons.notifications_outlined,
               title: AppLocalizations.of(context)!.notifications,
-              trailing: CustomSwitchWidget(),
-              onTap: () {},
+              onTap: () {
+                buildShowNotificationDialog(context);
+              },
             ),
             AccountMenuItem(
               icon: Icons.language,
@@ -75,7 +134,6 @@ class AccountMenuList extends StatelessWidget {
                 AppLocalizations.of(context)!.arabic,
                 style: TextStyle(color: Colors.grey, fontSize: 12.sp),
               ),
-
               onTap: () {
                 buildLanguageModelSheet(context);
               },

@@ -14,7 +14,7 @@ class AccountMenuSection extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: AppColor.white,
+            color: AppColor().accountMenuSectionColor(context),
             borderRadius: BorderRadius.circular(16.r),
             boxShadow: [
               BoxShadow(
