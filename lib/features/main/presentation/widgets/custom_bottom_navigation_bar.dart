@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wesal/core/utliz/app_color.dart';
 import 'package:wesal/features/main/presentation/manager/index_value_notifier.dart';
+import 'package:wesal/l10n/app_localizations.dart';
 
 class CustomBottomNavgationBar extends StatelessWidget {
   const CustomBottomNavgationBar({super.key});
@@ -27,14 +28,23 @@ class CustomBottomNavgationBar extends StatelessWidget {
           selectedFontSize: 12,
           showUnselectedLabels: true,
           showSelectedLabels: true,
-          items: const [
-            BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
+          items: [
             BottomNavigationBarItem(
-              label: 'Orders',
+              label: AppLocalizations.of(context)!.homeTitle,
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: AppLocalizations.of(context)!.ordersTitle,
               icon: Icon(Icons.receipt_long),
             ),
-            BottomNavigationBarItem(label: 'Pay', icon: Icon(Icons.payment)),
-            BottomNavigationBarItem(label: 'Account', icon: Icon(Icons.person)),
+            BottomNavigationBarItem(
+              label: AppLocalizations.of(context)!.cartTitle,
+              icon: Icon(Icons.shopping_bag_outlined),
+            ),
+            BottomNavigationBarItem(
+              label: AppLocalizations.of(context)!.accountTitle,
+              icon: Icon(Icons.person),
+            ),
           ],
         );
       },

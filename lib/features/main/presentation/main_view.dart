@@ -3,9 +3,14 @@ import 'package:wesal/features/main/presentation/manager/index_value_notifier.da
 import 'package:wesal/features/main/presentation/widgets/custom_bottom_navigation_bar.dart';
 import 'package:wesal/features/main/presentation/widgets/functions/app_screens.dart';
 
-class MainView extends StatelessWidget {
+class MainView extends StatefulWidget {
   const MainView({super.key});
 
+  @override
+  State<MainView> createState() => _MainViewState();
+}
+
+class _MainViewState extends State<MainView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

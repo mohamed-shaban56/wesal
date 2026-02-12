@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wesal/features/search/persentation/views/search_view.dart';
 import 'package:wesal/core/utliz/app_color.dart';
 import 'package:wesal/core/utliz/app_text_style.dart';
@@ -23,8 +24,9 @@ class HomeTextFild extends StatelessWidget {
           padding: const EdgeInsets.only(left: 10),
           child: Row(
             children: [
+              SizedBox(width: 10.w),
               Icon(Icons.search, color: AppColor.grey),
-              SizedBox(width: 10),
+              SizedBox(width: 10.w),
               Text(
                 AppLocalizations.of(context)!.searchHint,
                 style: AppTextStyle.cairo14(context),
